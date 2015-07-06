@@ -1,0 +1,14 @@
+Source: fileshare
+Section: devel
+Priority: optional
+Maintainer: zhouc <zhouxuan0922@outlook.com>
+Build-Depends: debhelper (>= 8.0.0),libldap-dev,libjson-c-dev
+Standards-Version: 3.9.4
+Homepage: http://sourceforge.net
+#Vcs-Git: git://git.debian.org/collab-maint/fileshare.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/fileshare.git;a=summary
+Package: fileshare
+Architecture: all
+Depends: libldap-dev,libjson-c-dev
+Description: <insert up to 60 chars description>
+Version: 0.1.0

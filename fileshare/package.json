@@ -1,0 +1,16 @@
+{
+	"name":"nw-demo",
+	"version":"v-0.1",
+	"main":"index.html",
+	"chromium-args": "--disable-setuid-sandbox",
+	"single-instance":false,
+	"window": {
+		"toolbar":false,
+		"frame":true,
+		"positon":"mouse",
+		"show_in_taskbar":false,
+		"width":800,
+		"height":580,
+		"resizable":false
+	}
+}

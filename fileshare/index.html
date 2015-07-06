@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+<title>File Share </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="./js/jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="./js/jquery-ui"></script>
+<script type="text/javascript" src="./js/handle.js"></script>
+<link rel="stylesheet" href="./css/bootstrap-combined.min.css" media = "screen"> 
+
+<!--
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+-->
+
+</head>
+<body>
+<div class="container">
+	<div class="row-fluid">
+		<div class="span12">
+			<div style="background-color: #0000">
+			<h3 class="text-left">			
+				<div class="row-fluid">			
+					<p class="span2" style="text-alogn: left;font-size: 14px" ><strong>文件路径</strong></p>
+					<p class="span6"  id="filepath" style="text-align: left;font-size: 14px"> </p>				
+				</div>				
+			</h3>
+					<!--
+					<form class="form-horizontal">
+					-->
+						<div class="row-fluid">
+							<label class="control-label span2" for="inputName" style="font-size: 14px;margin-top:5px"><strong><samp>指定该目录名称</samp></strong></label>    
+							
+							<input class="span4" style="margin-left: 20px" id="inputName" type="text" />
+						
+						</div>
+					<!--
+					</form>
+					-->
+			</div>
+				<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=3>
+				<div class="row-fluid">
+					<div class="span6" style="border-right: 0 1px grey; margin-right:10px;">
+						<div class="row-fluid " style="padding:0px;">
+						  <label  class="span2" for="username" style="margin-top:5px; margin-left:10px;"><strong>用户</strong></label>
+				
+						        <select class="offset1" id="username" style="width:100px"> 
+						        </select>
+							<button type="button" class="btn" id="addUser"  style="margin-top:-10px;">添加用户</button>
+						  </div>
+
+						<div style="scrollbar-face-color: #ebebeb;
+							scrollbar-shadow-color: #ffffff; 
+							scrollbar-highlight-color:#ffffff; 
+							scrollbar-3dlight-color: #d8d8d8;  
+							scrollbar-darkshadow-color: #d8d8d8; 
+							scrollbar-track-color:#ffffff; 
+							scrollbar-arrow-color: #686868;
+							overflow-x: auto; height: 250px; width:300px;
+							border:1 solid;border-top:1px solid black;">
+							<table class="table" border="1" bordercolor="black" cellpadding="0" cellpadding="2" width="100%" id="userTable">
+								<tr >
+    								<td>用户名</td>
+    								<td>权限</td>
+    								<td>操作</td>  
+  								</tr>
+							</table>
+						</div>				
+					</div>
+					<div class="span6" style="border-left: 0 1px grey; margin-left:10px;">
+						<div class="row-fluid " style="padding:0px;">
+						  <label  class="span2" for="groupname" style="margin-top:5px; margin-left:10px;"><strong>组</strong></label>
+				
+						        <select class="offset1" id="groupname" style="width:100px"> 
+						        </select>
+							<button type="button" class="btn" id="addGroup"  style="margin-top:-10px;">添加组</button>
+						  </div>
+
+						<div style="scrollbar-face-color: #ebebeb;
+							scrollbar-shadow-color: #ffffff; 
+							scrollbar-highlight-color:#ffffff; 
+							scrollbar-3dlight-color: #d8d8d8;  
+							scrollbar-darkshadow-color: #d8d8d8; 
+							scrollbar-track-color:#ffffff; 
+							scrollbar-arrow-color: #686868;
+							overflow-x: auto; height: 250px; width:300px;
+							border:1;border-top:1px solid black">
+							<table class="table" border="1" bordercolor="black" cellpadding="0" cellpadding="2" width="100%" id="groupTable">
+								<tr >
+    								<td>组名</td>
+    								<td>权限</td>
+    								<td>操作</td>  
+  								</tr>
+							</table>
+						</div>				
+					</div>
+				</div>
+			<div class="row-fluid">
+				<div class="form-actions text-center" >
+ 				 <button type="submit" class="btn btn-primary" id="submit">Confirm</button>
+  				<button type="button" class="btn" id="cancel">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
